@@ -32,8 +32,8 @@
                     <p>Your reply: {{answer}}</p>
                 </div>
                 <div class="radio" *ngFor="let gender of genders">
-                    <label [for]="gender">
-                        <input type="radio" name="gender" [id]="gender" ngModel [value]="gender">{{gender}}
+                    <label>
+                        <input type="radio" name="gender" ngModel [value]="gender">{{gender}}
                     </label>
                 </div>
                 <button class="btn btn-primary" type="submit" [disabled]="f.invalid">Submit</button>
@@ -53,17 +53,17 @@
     </div>
 </div>
 
-<!-- <div class="container">
+<div class="container">
     <div class="radio">
         <div>
-            <label for="imale">
-                <input type="radio" name="gender" id="imale" ngModel value="male">Male
+            <label>
+                <input type="radio" name="gender" ngModel value="male">Male
             </label>
         </div>
         <div>
-            <label for="ifemale">
-                <input type="radio" name="gender" id="ifemale" ngModel value="female">Female
+            <label>
+                <input type="radio" name="gender" ngModel value="female">Female
             </label>
         </div>
     </div>
-</div> -->
+</div>
